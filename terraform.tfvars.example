@@ -1,0 +1,10 @@
+# Copy this file to terraform.tfvars and fill in real values.
+# terraform.tfvars should NOT be committed to git.
+
+aws_account_id = "123456789012"
+region     = "us-west-1"
+environment    = "dev"
+
+# Dedicated VPC for this environment.
+# Give qa/prod their own non-overlapping ranges in their own tfvars, e.g. 10.20.0.0/16 and 10.30.0.0/16.
+vpc_cidr = "10.10.0.0/16"
